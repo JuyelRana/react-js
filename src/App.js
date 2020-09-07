@@ -85,18 +85,14 @@ class App extends Component {
             classes.push('bold');
         }
 
-        return (
-
-            <div className="App">
-                <h1>React Developer</h1>
-                <p className={classes.join(' ')}>Working with react</p>
-                <StyledButton onClick={this.togglePersonHandler} alt={this.state.showPersons}>
-                    Toggle Person
-                </StyledButton>
-                {persons}
-            </div>
-
-        )
+        return (<div className="App">
+            <h1>React Developer</h1>
+            <p className={classes.join(' ')}>Working with react</p>
+            <StyledButton onClick={this.togglePersonHandler} alt={this.state.showPersons}>
+                Toggle Person
+            </StyledButton>
+            {persons}
+        </div>)
     }
 }
 
